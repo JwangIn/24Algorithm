@@ -3,6 +3,7 @@
 #include "InputReference.h"
 #include "Pow.h"
 #include "DivideAndConquer.h"
+#include <ctime>
 
 int main()
 {
@@ -19,5 +20,29 @@ int main()
 	for (int i = 0; i < 8; i++)
 	{
 		std::cout << list[i] << " ";
+	}
+	std::cout << std::endl;
+
+	std::cout << "Äü¼±ÅÃ" << std::endl;
+
+	srand(time(0));
+
+	std::vector<int> someVec = { 12,1,4,8,6,7,3 };
+	// std::cout << QuickSelect(someVec, 2);
+
+	QuickSort(someVec, 0, someVec.size() - 1);
+	for (int num : someVec)
+	{
+		std::cout << num << " ";
+	}
+
+	std::cout << std::endl;
+
+	std::vector<int> someVec2 = { 12,1,4,8,6,7,3 };
+
+	QuickSort2(someVec2, 0, someVec2.size() - 1);
+	for (int num : someVec)
+	{
+		std::cout << num << " ";
 	}
 }
