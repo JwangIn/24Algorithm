@@ -23,12 +23,15 @@ int main()
 	}
 	std::cout << std::endl;
 
+	std::vector<int> someVec = { 12,1,4,8,6,7,3 };
+
 	std::cout << "Äü¼±ÅÃ" << std::endl;
+	//std::cout << QuickSelect(someVec,3) << std::endl;
 
 	srand(time(0));
 
-	std::vector<int> someVec = { 12,1,4,8,6,7,3 };
-	// std::cout << QuickSelect(someVec, 2);
+	
+
 
 	QuickSort(someVec, 0, someVec.size() - 1);
 	for (int num : someVec)
@@ -36,13 +39,5 @@ int main()
 		std::cout << num << " ";
 	}
 
-	std::cout << std::endl;
-
-	std::vector<int> someVec2 = { 12,1,4,8,6,7,3 };
-
-	QuickSort2(someVec2, 0, someVec2.size() - 1);
-	for (int num : someVec)
-	{
-		std::cout << num << " ";
-	}
+	
 }
