@@ -4,6 +4,8 @@
 #include "Pow.h"
 #include "DivideAndConquer.h"
 #include <ctime>
+#include "DynamicPrograming.h"
+#include "TimeChecker.h"
 
 int main()
 {
@@ -39,5 +41,20 @@ int main()
 		std::cout << num << " ";
 	}
 
+	system("cls");
+
+	std::cout << "재귀 방식 : 피보나치 수열" << std::endl;
 	
+	int count = 30;
+
+	std::cout << "피보나치 수 : " << Fibonacci(count) << std::endl;
+	std::cout << "피보나치 시간 : " << measureExecutionTime(Fibonacci,count)<<"ms" << std::endl;
+
+	std::cout << "동적 계획법 방식 : 피보나치 수열" << std::endl;
+
+	int count2 = 30;
+
+	std::cout << "피보나치 수 : " << FibonacciDP(count2) << std::endl;
+	std::cout << "피보나치 시간 : " << measureExecutionTime(FibonacciDP, count2) << "ms" << std::endl;
+
 }
