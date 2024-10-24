@@ -137,10 +137,10 @@
   <ItemGroup>
     <ClInclude Include="DivideAndConquer.h" />
     <ClInclude Include="DynamicPrograming.h" />
+    <ClInclude Include="Greedy.h" />
     <ClInclude Include="InputReference.h" />
     <ClInclude Include="Lecture.h" />
     <ClInclude Include="Pow.h" />
-    <ClInclude Include="Problem.h" />
     <ClInclude Include="Sort.h" />
     <ClInclude Include="TimeChecker.h" />
   </ItemGroup>

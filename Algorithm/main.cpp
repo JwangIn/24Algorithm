@@ -6,7 +6,7 @@
 #include <ctime>
 #include "DynamicPrograming.h"
 #include "TimeChecker.h"
-
+#include "Greedy.h"
 int main()
 {
 	//bubbleExample();
@@ -62,4 +62,6 @@ int main()
 	std::vector<int> stairs = { 10,20,15,25,10,20 };
 	std::cout<<"계단의 수가 " << stairs.size() <<"일 때 최대 값 : " << stairCount(stairs) << std::endl;
 
+
+	Case002();
 }
