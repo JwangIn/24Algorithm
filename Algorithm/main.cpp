@@ -8,6 +8,9 @@
 #include "TimeChecker.h"
 #include "Greedy.h"
 #include "BackTracking.h"
+#include "array2D.h"
+#include "graph.h"
+
 
 int main()
 {
@@ -62,11 +65,16 @@ int main()
 	std::cout<<"계단의 수가 " << stairs.size() <<"일 때 최대 값 : " << stairCount(stairs) << std::endl;
 
 	Case002();
-	system("cls");
-
-
-	
+		
 	Permutation::Case01();
 	std::cout << "조합" << std::endl;
 	Combine::Case02();
+
+	system("cls");
+
+	//Board::Case1();
+	Board::Case2();
+	Board::Case3();
+
+
 }
