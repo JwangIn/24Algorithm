@@ -76,5 +76,7 @@ int main()
 	Board::Case2();
 	Board::Case3();
 
+	GraphVec::Print();
+
 
 }

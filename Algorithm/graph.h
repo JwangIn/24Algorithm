@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -51,6 +52,69 @@ namespace virus
 
 		cout << count;
 	}
+
+
+}
+
+namespace GraphVec
+{
+	int n, m; // n 세로, m 가로
+
+	vector<vector<int>> graph1;
+
+	void Print()
+	{
+		n = 6, m = 4;
+
+		
+
+		graph1=vector<vector<int>>(n);
+
+		// 입력
+		for (int i = 0; i < m; i++)
+		{
+			int a, b;
+			cin >> a >> b;
+			
+			graph1[a].push_back(b);
+			graph1[b].push_back(a);
+			
+		}
+
+		// 정렬
+		for (int i = 0; i < n; i++)
+		{
+			
+			sort(graph1[i].begin(), graph1[i].end());
+		}
+
+		// 출력
+		for (int i = 0; i < n; i++)
+		{			
+			cout << "[" << i << "] : ";
+			for (int j = 0; j < m; j++)
+			{
+				// graph[i].연결된 데이터가 없을 때 접근할 방법이 없다.
+				if (j < graph1[i].size())
+				{
+					cout << graph1[i][j] << ' ';
+				}
+				else
+				{
+					cout << "@"; // 0을 공백이라는 뜻으로 사용 
+				}
+								
+			}
+			cout << '\n';
+		}
+		
+
+
+
+
+
+	}
+	
 
 
 }
