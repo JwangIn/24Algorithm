@@ -73,10 +73,11 @@ int main()
 	system("cls");
 
 	//Board::Case1();
-	Board::Case2();
-	Board::Case3();
+	//Board::Case2();
+	//Board::Case3();
 
-	GraphVec::Print();
+	//GraphVec::Print();
 
+	InputGraph::Show();
 
 }
