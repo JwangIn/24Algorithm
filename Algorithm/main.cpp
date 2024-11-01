@@ -10,7 +10,7 @@
 #include "BackTracking.h"
 #include "array2D.h"
 #include "graph.h"
-
+#include "MST.h"
 
 int main()
 {
@@ -78,6 +78,8 @@ int main()
 
 	//GraphVec::Print();
 
-	InputGraph::Show();
+	//InputGraph::Show();
 
+	InputWeight::Show1();
+	InputWeight::Show2();
 }
