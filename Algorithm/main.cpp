@@ -80,6 +80,8 @@ int main()
 
 	//InputGraph::Show();
 
-	InputWeight::Show1();
-	InputWeight::Show2();
+	//InputWeight::Show1();
+	//InputWeight::Show2();
+
+	InputGraph::Show001();
 }

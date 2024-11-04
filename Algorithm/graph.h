@@ -131,7 +131,7 @@ namespace InputGraph
 
 	vector<vector<int>> graph(n, vector<int>(m, 0)); // 4x6 배열 0 할당
 
-	void Show()
+	void Show01()
 	{
 		// cin>>n>>m;
 
