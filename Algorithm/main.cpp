@@ -12,6 +12,7 @@
 #include "graph.h"
 #include "MST.h"
 #include "AStar.h"
+#include "Regular Expression.h"
 
 int main()
 {
@@ -86,6 +87,7 @@ int main()
 
 	//InputGraph::Show001();
 
-	FoundPath::SolveProble();
+	//FoundPath::GetBoard();
 
+	Express();
 }
